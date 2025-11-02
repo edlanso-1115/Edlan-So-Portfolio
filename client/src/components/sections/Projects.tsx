@@ -7,58 +7,24 @@ import AnimatedCard from "@/components/AnimatedCard";
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "A full-featured e-commerce platform with product catalog, shopping cart, and payment integration.",
-    tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
+    title: "Personal Portfolio Website",
+    description: "A responsive portfolio website to showcase projects and skills with a modern design.",
+    tags: ["React", "TypeScript", "HTML", "CSS", "JavaScript"],
     image: "bg-gradient-to-br from-blue-500/20 to-blue-600/20",
     link: "#",
     github: "#",
   },
+  
   {
     id: 2,
-    title: "Task Management App",
-    description: "Real-time collaborative task management application with team features and notifications.",
-    tags: ["React", "Firebase", "Tailwind CSS", "WebSocket"],
-    image: "bg-gradient-to-br from-purple-500/20 to-purple-600/20",
-    link: "#",
-    github: "#",
-  },
-  {
-    id: 3,
-    title: "Analytics Dashboard",
-    description: "Interactive analytics dashboard with real-time data visualization and custom reports.",
-    tags: ["Next.js", "TypeScript", "Chart.js", "API"],
+    title: "Python Game Project",
+    description: "Modified Tetris game using Pygame with different gamerules, added features and improved graphics.",
+    tags: ["Python", "Pygame", "NumPy", "Pandas"],
     image: "bg-gradient-to-br from-green-500/20 to-green-600/20",
     link: "#",
     github: "#",
   },
-  {
-    id: 4,
-    title: "Social Media App",
-    description: "Social networking platform with user profiles, messaging, and feed functionality.",
-    tags: ["React Native", "Node.js", "MongoDB", "Socket.io"],
-    image: "bg-gradient-to-br from-pink-500/20 to-pink-600/20",
-    link: "#",
-    github: "#",
-  },
-  {
-    id: 5,
-    title: "Content Management System",
-    description: "Headless CMS with rich text editor, media management, and API-first architecture.",
-    tags: ["Next.js", "Prisma", "PostgreSQL", "REST API"],
-    image: "bg-gradient-to-br from-orange-500/20 to-orange-600/20",
-    link: "#",
-    github: "#",
-  },
-  {
-    id: 6,
-    title: "AI Chat Application",
-    description: "AI-powered chat application with natural language processing and conversation history.",
-    tags: ["React", "OpenAI API", "Node.js", "MongoDB"],
-    image: "bg-gradient-to-br from-cyan-500/20 to-cyan-600/20",
-    link: "#",
-    github: "#",
-  },
+  
 ];
 
 export default function Projects() {

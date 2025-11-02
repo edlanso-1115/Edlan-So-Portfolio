@@ -4,50 +4,48 @@ import ScrollReveal from "@/components/ScrollReveal";
 const experiences = [
   {
     id: 1,
-    title: "Senior Full-Stack Developer",
-    company: "Tech Innovations Inc.",
-    period: "2022 - Present",
-    description: "Lead development of multiple full-stack applications, mentoring junior developers and architecting scalable solutions.",
-    achievements: [
-      "Designed and implemented microservices architecture",
-      "Reduced API response time by 40%",
-      "Mentored 5+ junior developers",
+    title: "CPOE Project Assistant",
+    company: "Oak Valley Health - Markham Stouffville Hospital",
+    period: "September 2025 - Present",
+    description: [
+      "Support the Meditech CPOE/Web Ambulatory system by assisting staff, documenting issues, troubleshooting, and helping deployment through training, documentation, and system implementation.",
+      "Customize and maintained Acorn CPOE website components using HTML, CSS, and JavaScript, ensuring accurate information display and improved usability.",
+      "Create process flowcharts and technical diagrams in Microsoft Visio to support documentation and communication across teams.",
     ],
   },
   {
     id: 2,
-    title: "Full-Stack Developer",
-    company: "Digital Solutions Ltd.",
-    period: "2020 - 2022",
-    description: "Developed and maintained multiple client-facing web applications using React and Node.js.",
-    achievements: [
-      "Built 10+ production applications",
-      "Improved code quality with automated testing",
-      "Implemented CI/CD pipelines",
+    title: "Lab Research Assistant - Microplastic Filtration",
+    company: "University of Waterloo - Quantum Nano Cenre",
+    period: "January 2025 - April 2025",
+    description: [
+      "Conducted literature review to support experimental design on microplastic (MP) filtration methods and membrane performance.",
+      "Prepared wood fiber filters by optimizing surfactant, blend, and crosslinker compositions; created fully dispersed MP solutions using homogenization techniques.",
+      "Collected and analyzed data on filtration efficiency using particle counters and UV-Vis spectroscopy; applied adsorption isotherm models using Python.",
+      "Collaborated on related emulsion studies using probe sonicator, particle size analyzer, and rheometer.",
+      "Presented project background and methodology to faculty and researchers.",
     ],
   },
   {
     id: 3,
-    title: "Frontend Developer",
-    company: "Creative Agency Co.",
-    period: "2018 - 2020",
-    description: "Created responsive and interactive user interfaces for various web projects.",
-    achievements: [
-      "Developed responsive designs for 20+ projects",
-      "Optimized website performance by 50%",
-      "Led frontend team of 3 developers",
+    title: "School Office Assistant",
+    company: "Baptist Lui Ming Choi Secondary School",
+    period: "June 2024 - August 2024",
+    description: [
+      "Managed the entry and organization of student records for both current and incoming students, ensuring data accuracy and confidentiality within the school's internal system.",
+      "Coordinated and prepared documentation for the Year-End Ceremony, contributing to the successful execution of the event using Microsoft Excel and Word for scheduling and report creation.",
+      "Assisted students through the appeals process for the Hong Kong Diploma of Secondary Education (HKDSE) examinations, providing clear communication and administrative support throughout.",
     ],
   },
   {
     id: 4,
-    title: "Junior Developer",
-    company: "StartUp Hub",
-    period: "2017 - 2018",
-    description: "Assisted in development of web applications and learned full-stack development practices.",
-    achievements: [
-      "Built first full-stack application",
-      "Contributed to open-source projects",
-      "Completed advanced training programs",
+    title: "Medical Research Assistant",
+    company: "University of Waterloo - Remote",
+    period: "May 2024 - August 2024",
+    description: [
+      "Successfully completed the AZ-900 (Microsoft Azure Fundamentals) certification, demonstrating foundational knowledge of cloud concepts, Azure services, and Azure privacy, and pricing models.",
+      "Passed the AI-900 (Azure AI Fundamentals) exam, showcasing understanding of artificial intelligence and machine learning concepts.",
+      "Actively contributed to a Medical Research Assistant project, focusing on assessing the effectiveness of medical technologies, quantifiable impacts and ethical considerations, applying NLP and LLM.",
     ],
   },
 ];
@@ -91,7 +89,7 @@ export default function Experience() {
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
                         <div>
                           <CardTitle className="text-xl">{exp.title}</CardTitle>
-                          <CardDescription className="text-base text-accent font-medium">
+                          <CardDescription className="text-base text-foreground font-medium">
                             {exp.company}
                           </CardDescription>
                         </div>
@@ -102,19 +100,18 @@ export default function Experience() {
                     </CardHeader>
 
                     <CardContent className="space-y-4">
-                      <p className="text-muted-foreground">{exp.description}</p>
-
-                      <div>
-                        <h4 className="font-semibold mb-2 text-sm">Key Achievements:</h4>
-                        <ul className="space-y-1">
-                          {exp.achievements.map((achievement, i) => (
+                      <ul className="space-y-2">
+                        {Array.isArray(exp.description) ? (
+                          exp.description.map((item, i) => (
                             <li key={i} className="text-sm text-muted-foreground flex gap-2">
                               <span className="text-accent">•</span>
-                              {achievement}
+                              {item}
                             </li>
-                          ))}
-                        </ul>
-                      </div>
+                          ))
+                        ) : (
+                          <li className="text-sm text-muted-foreground">{exp.description}</li>
+                        )}
+                      </ul>
                     </CardContent>
                   </Card>
                 </div>

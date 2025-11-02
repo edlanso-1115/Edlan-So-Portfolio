@@ -3,20 +3,28 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const skillCategories = [
   {
-    category: "Frontend",
-    skills: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Vue.js", "HTML/CSS"],
+    category: "Coding & Frameworks",
+    skills: ["Python", "React", "TypeScript", "JavaScript", "HTML", "CSS"],
   },
   {
-    category: "Backend",
-    skills: ["Node.js", "Express", "Python", "PostgreSQL", "MongoDB", "REST APIs"],
+    category: "Data Analysis & Visualization",
+    skills: ["SQL", "MySQL", "MatLab", "Python", "Pandas", "Matplotlib", "Excel (Power Query, Macros)"],
   },
   {
-    category: "Tools & Platforms",
-    skills: ["Git", "Docker", "AWS", "Firebase", "Vercel", "GitHub Actions"],
+    category: "CAD & Simulation",
+    skills: ["SolidWorks", "Blender", "Adobe 3D", "SketchUp", "Canva"],
+  },
+  {
+    category: "Electrical & Electronics",
+    skills: ["Circuit Analysis", "Oscillator", "Digital Multimeter", "Function Generator", "Power Supplies"],
+  },
+  {
+    category: "Chemistry & Materials",
+    skills: ["UV-vis", "Probe Sonicator", "Homogenizer", "Particle Size Analyzer", "Particle Counter", "Rheometer", "FTIR Spectroscopy", "Raman Spectroscopy", "Ellipsometry", "SEM", "X-ray Diffraction", "Impact and Tensile Tester", "Differential Scanning Calorimetry", "Thermal Gravimetric Analysis", "Atomic Force Microscopy"],
   },
   {
     category: "Soft Skills",
-    skills: ["Problem Solving", "Communication", "Team Leadership", "Project Management", "Mentoring", "Agile"],
+    skills: ["Problem Solving", "Communication", "Collaboration", "Project Management", "Mutilingual (English, Cantonese, Mandarin)"],
   },
 ];
 
@@ -47,7 +55,7 @@ export default function Skills() {
                   {category.skills.map((skill) => (
                     <div
                       key={skill}
-                      className="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm font-medium border border-accent/20 hover:bg-accent/20 transition-colors"
+                      className="px-3 py-1 bg-accent/10 text-foreground rounded-full text-sm font-medium border border-foreground/20 hover:bg-accent/20 transition-colors"
                     >
                       {skill}
                     </div>
@@ -58,54 +66,6 @@ export default function Skills() {
           ))}
         </div>
 
-        {/* Proficiency Levels */}
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="space-y-4">
-            <h3 className="text-xl font-semibold">Technical Proficiency</h3>
-            {[
-              { name: "Frontend Development", level: 95 },
-              { name: "Backend Development", level: 85 },
-              { name: "Database Design", level: 80 },
-              { name: "DevOps & Deployment", level: 75 },
-            ].map((skill) => (
-              <div key={skill.name}>
-                <div className="flex justify-between mb-2">
-                  <span className="text-sm font-medium">{skill.name}</span>
-                  <span className="text-sm text-muted-foreground">{skill.level}%</span>
-                </div>
-                <div className="w-full bg-card rounded-full h-2 border border-border overflow-hidden">
-                  <div
-                    className="bg-gradient-to-r from-accent to-accent/60 h-full rounded-full transition-all duration-500"
-                    style={{ width: `${skill.level}%` }}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="space-y-4">
-            <h3 className="text-xl font-semibold">Industry Experience</h3>
-            {[
-              { name: "E-commerce Platforms", level: 90 },
-              { name: "SaaS Applications", level: 88 },
-              { name: "Mobile Apps", level: 82 },
-              { name: "Real-time Applications", level: 78 },
-            ].map((skill) => (
-              <div key={skill.name}>
-                <div className="flex justify-between mb-2">
-                  <span className="text-sm font-medium">{skill.name}</span>
-                  <span className="text-sm text-muted-foreground">{skill.level}%</span>
-                </div>
-                <div className="w-full bg-card rounded-full h-2 border border-border overflow-hidden">
-                  <div
-                    className="bg-gradient-to-r from-accent to-accent/60 h-full rounded-full transition-all duration-500"
-                    style={{ width: `${skill.level}%` }}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );

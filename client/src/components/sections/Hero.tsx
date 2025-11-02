@@ -4,7 +4,7 @@ import { useTypewriter } from "@/hooks/useTypewriter";
 
 export default function Hero() {
   const { displayedText, isComplete } = useTypewriter({
-    text: "Your Name",
+    text: "Edlan So",
     speed: 80,
     delay: 300,
   });
@@ -32,13 +32,13 @@ export default function Hero() {
         <div className="space-y-4">
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
             Hello, I'm{" "}
-            <span className="bg-gradient-to-r from-accent to-accent/60 bg-clip-text text-transparent inline-block min-h-[1.2em]">
+            <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent font-semibold inline-block min-h-[1.2em]">
               {displayedText}
               {!isComplete && <span className="animate-pulse">|</span>}
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.8s" }}>
-            Full-stack developer passionate about creating beautiful, functional web experiences
+          <p className="text-lg md:text-xl text-muted-foreground/95 max-w-2xl mx-auto leading-relaxed">
+            Student from University of Waterloo | Nanotechnology Engineering | Passionate In New Techs
           </p>
         </div>
 

@@ -7,6 +7,7 @@ import About from "@/components/sections/About";
 import Skills from "@/components/sections/Skills";
 import Projects from "@/components/sections/Projects";
 import Experience from "@/components/sections/Experience";
+import Courses from "@/components/sections/Courses";
 import Contact from "@/components/sections/Contact";
 import Navigation from "@/components/Navigation";
 
@@ -25,6 +26,7 @@ export default function Home() {
         <Skills />
         <Projects />
         <Experience />
+        <Courses />
         <Contact />
       </main>
 
@@ -37,21 +39,21 @@ export default function Home() {
             </p>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://github.com/edlanso-1115"
                 className="text-muted-foreground hover:text-foreground transition-colors"
                 aria-label="GitHub"
               >
                 <Github size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/edlan-so"
                 className="text-muted-foreground hover:text-foreground transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
               </a>
               <a
-                href="#"
+                href="mailto:e5so@uwaterloo.ca"
                 className="text-muted-foreground hover:text-foreground transition-colors"
                 aria-label="Email"
               >
