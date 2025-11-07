@@ -7,6 +7,7 @@ const plugins = [react(), tailwindcss()];
 
 export default defineConfig({
   plugins,
+  base: "/Edlan-So-Portfolio-2/", // 👈 CHANGE THIS to match your GitHub repo name
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
@@ -26,4 +27,3 @@ export default defineConfig({
     host: true,
   },
 });
-
