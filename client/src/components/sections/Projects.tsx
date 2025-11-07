@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { useState } from "react";
 import AnimatedCard from "@/components/AnimatedCard";
 
@@ -9,22 +9,42 @@ const projects = [
     id: 1,
     title: "Personal Portfolio Website",
     description: "A responsive portfolio website to showcase projects and skills with a modern design.",
-    tags: ["React", "TypeScript", "HTML", "CSS", "JavaScript"],
-    image: "bg-gradient-to-br from-blue-500/20 to-blue-600/20",
-    link: "#",
-    github: "#",
+    tags: ["React", "TypeScript", "HTML", "CSS", "JavaScript", "GitHub Pages", "VS Code", "Terminal"],
+    image: "/images/portfolio_homepage.png",
+    link: "https://github.com/edlanso-1115/Edlan-So-Portfolio",
   },
-  
   {
     id: 2,
     title: "Python Game Project",
     description: "Modified Tetris game using Pygame with different gamerules, added features and improved graphics.",
-    tags: ["Python", "Pygame", "NumPy", "Pandas"],
-    image: "bg-gradient-to-br from-green-500/20 to-green-600/20",
-    link: "#",
-    github: "#",
+    tags: ["Python", "Pygame", "NumPy", "Pandas", "GitHub"],
+    image: "/images/Tetris_Logo.jpg",
+    link: "https://github.com/edlanso-1115/Tetris-Game-Project",
   },
-  
+  {
+    id: 3,
+    title: "Circuit Design and Analysis",
+    description: "Designed and simulated various electronic circuits using industry-standard lab equipment.",
+    tags: ["Digital Multimeter", "Power Supply", "Function Generator", "Semiconductor Devices", "Oscilloscope"],
+    image: "/images/Semiconductor.png",
+    link: "/images/Electrical.png",
+  },
+  {
+    id: 4,
+    title: "Material Science and Characterization",
+    description: "Analyzed and characterized various materials using advanced techniques and instruments.",
+    tags: ["Solidworks", "UV Vis", "FTIR", "Raman", "Ellipsometry", "XRD", "SEM", "Impact / Tensile Tester", "DSC", "TGA", "AFM"],
+    image: "/images/QD.png",
+    link: "/images/Materials.png",
+  },
+  {
+    id: 5,
+    title: "Skypark Waterpark - Minecraft Build",
+    description: "Built a massive waterpark in Minecraft with various attractions and features since 2016. (My hobby and masterpiece! XD)",
+    tags: ["Minecraft", "Creativity", "3D Spatial Design", "Project Management"],
+    image: "/images/Minecraft_icon.PNG",
+    link: "/images/Skypark.png",
+  },
 ];
 
 export default function Projects() {
@@ -37,12 +57,11 @@ export default function Projects() {
     : projects;
 
   return (
-    <section
-      id="projects"
-      className="py-20 px-4 bg-card border-t border-border"
-    >
+    <section id="projects" className="py-20 px-4 bg-card border-t border-border">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl font-bold mb-12 text-center animate-fade-in-down">Featured Projects</h2>
+        <h2 className="text-4xl font-bold mb-12 text-center animate-fade-in-down">
+          Featured Projects
+        </h2>
 
         {/* Filter Tags */}
         <div className="flex flex-wrap gap-2 justify-center mb-12">
@@ -56,6 +75,7 @@ export default function Projects() {
           >
             All
           </button>
+
           {allTags.map((tag) => (
             <button
               key={tag}
@@ -74,14 +94,27 @@ export default function Projects() {
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProjects.map((project, index) => (
-            <AnimatedCard
-              key={project.id}
-              className={`animate-stagger-${(index % 5) + 1}`}
-            >
+            <AnimatedCard key={project.id} className={`animate-stagger-${(index % 5) + 1}`}>
               <Card className="overflow-hidden border-border hover:border-accent/50 transition-all hover:shadow-lg h-full">
+                
                 {/* Project Image */}
-                <div className={`h-40 ${project.image} border-b border-border flex items-center justify-center`}>
-                  <span className="text-muted-foreground text-sm">Project Preview</span>
+                <div className="h-40 border-b border-border overflow-hidden bg-background/50">
+                  {project.image && project.image.startsWith("/") ? (
+                    <img
+                      src={project.image}
+                      alt={`${project.title} preview`}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div
+                      className={`h-full ${
+                        project.image || "bg-gradient-to-br from-gray-200 to-gray-300"
+                      } flex items-center justify-center`}
+                    >
+                      <span className="text-muted-foreground text-sm">Project Preview</span>
+                    </div>
+                  )}
                 </div>
 
                 <CardHeader>
@@ -104,26 +137,10 @@ export default function Projects() {
 
                   {/* Links */}
                   <div className="flex gap-2 pt-2">
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="flex-1 gap-2"
-                      asChild
-                    >
+                    <Button variant="outline" size="sm" className="flex-1 gap-2" asChild>
                       <a href={project.link} target="_blank" rel="noopener noreferrer">
                         <ExternalLink size={16} />
                         View
-                      </a>
-                    </Button>
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="flex-1 gap-2"
-                      asChild
-                    >
-                      <a href={project.github} target="_blank" rel="noopener noreferrer">
-                        <Github size={16} />
-                        Code
                       </a>
                     </Button>
                   </div>
@@ -136,11 +153,12 @@ export default function Projects() {
         {/* No Results */}
         {filteredProjects.length === 0 && (
           <div className="text-center py-12">
-            <p className="text-muted-foreground">No projects found with the selected filter.</p>
+            <p className="text-muted-foreground">
+              No projects found with the selected filter.
+            </p>
           </div>
         )}
       </div>
     </section>
   );
 }
-

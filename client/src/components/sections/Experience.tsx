@@ -1,7 +1,17 @@
+import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import ScrollReveal from "@/components/ScrollReveal";
 
-const experiences = [
+type ExperienceItem = {
+  id: number;
+  title: string;
+  company: string;
+  period: string;
+  description: string[] | string;
+  links?: { label: string; href: string }[];
+};
+
+const experiences: ExperienceItem[] = [
   {
     id: 1,
     title: "CPOE Project Assistant",
@@ -20,11 +30,15 @@ const experiences = [
     period: "January 2025 - April 2025",
     description: [
       "Conducted literature review to support experimental design on microplastic (MP) filtration methods and membrane performance.",
-      "Prepared wood fiber filters by optimizing surfactant, blend, and crosslinker compositions; created fully dispersed MP solutions using homogenization techniques.",
+      "Prepared wood fiber filters by optimizing surfactant (eg. SDBS, CTAB, Urea), blend, and crosslinker compositions (eg. PEI); created fully dispersed MP solutions using homogenization techniques.",
       "Collected and analyzed data on filtration efficiency using particle counters and UV-Vis spectroscopy; applied adsorption isotherm models using Python.",
       "Collaborated on related emulsion studies using probe sonicator, particle size analyzer, and rheometer.",
       "Presented project background and methodology to faculty and researchers.",
     ],
+    links: [
+      { label: "Presenation Slide", href: "https://docs.google.com/presentation/d/1pJKXPQDxpKcRVyE-2a58qPy65BP8XiU-jIH_KcX_Kc0/edit?slide=id.p1#slide=id.p1" },
+      { label: "Images", href: "/images/Lab.png" },
+    ]
   },
   {
     id: 3,
@@ -112,6 +126,21 @@ export default function Experience() {
                           <li className="text-sm text-muted-foreground">{exp.description}</li>
                         )}
                       </ul>
+                      {exp.links && exp.links.length > 0 && (
+                        <div className="mt-4 flex flex-wrap gap-2">
+                          {exp.links.map((l) => (
+                            <a
+                              key={l.href}
+                              href={l.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center px-3 py-1 text-sm rounded-md border border-border bg-background hover:bg-accent/5 transition"
+                            >
+                              {l.label}
+                            </a>
+                          ))}
+                        </div>
+                      )}
                     </CardContent>
                   </Card>
                 </div>

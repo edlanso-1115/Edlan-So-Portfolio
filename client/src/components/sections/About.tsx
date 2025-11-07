@@ -30,10 +30,11 @@ export default function About() {
 
                 <div className="mt-3 flex flex-wrap gap-2">
                   <span className="text-xs px-2 py-1 bg-background/60 rounded-full border border-border">Materials Science</span>
-                  <span className="text-xs px-2 py-1 bg-background/60 rounded-full border border-border">Electrochemistry</span>
-                  <span className="text-xs px-2 py-1 bg-background/60 rounded-full border border-border">Python</span>
-                  <span className="text-xs px-2 py-1 bg-background/60 rounded-full border border-border">SQL</span>
-                  <span className="text-xs px-2 py-1 bg-background/60 rounded-full border border-border">Azure</span>
+                  <span className="text-xs px-2 py-1 bg-background/60 rounded-full border border-border">Lab Research</span>
+                  <span className="text-xs px-2 py-1 bg-background/60 rounded-full border border-border">Software / AI</span>
+                  <span className="text-xs px-2 py-1 bg-background/60 rounded-full border border-border">IT</span>
+                  <span className="text-xs px-2 py-1 bg-background/60 rounded-full border border-border">Data Analysis</span>
+                  <span className="text-xs px-2 py-1 bg-background/60 rounded-full border border-border">Electrical Engineering</span>
                 </div>
 
                 <div className="mt-4 w-full">

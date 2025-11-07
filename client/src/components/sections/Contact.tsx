@@ -23,27 +23,31 @@ export default function Contact() {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  e.preventDefault();
+  setIsSubmitting(true);
 
-    // Validation
-    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
-      toast.error("Please fill in all fields");
-      return;
-    }
+  try {
+    const response = await fetch("https://formspree.io/f/meopydyo", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
 
-    setIsSubmitting(true);
-
-    // Simulate form submission
-    try {
-      await new Promise((resolve) => setTimeout(resolve, 1500));
+    if (response.ok) {
       toast.success("Message sent successfully! I'll get back to you soon.");
       setFormData({ name: "", email: "", subject: "", message: "" });
-    } catch (error) {
+    } else {
       toast.error("Failed to send message. Please try again.");
-    } finally {
-      setIsSubmitting(false);
     }
-  };
+  } catch (error) {
+    console.error(error);
+    toast.error("Something went wrong!");
+  }
+
+  setIsSubmitting(false);
+};
 
   const contactInfo = [
     {

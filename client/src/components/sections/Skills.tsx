@@ -4,11 +4,11 @@ import ScrollReveal from "@/components/ScrollReveal";
 const skillCategories = [
   {
     category: "Coding & Frameworks",
-    skills: ["Python", "React", "TypeScript", "JavaScript", "HTML", "CSS"],
+    skills: ["Python", "React", "TypeScript", "JavaScript", "HTML", "CSS", "Git", "GitHub", "VS Code", "Terminal", "Jupyter Notebook", "Pygame" ],
   },
   {
     category: "Data Analysis & Visualization",
-    skills: ["SQL", "MySQL", "MatLab", "Python", "Pandas", "Matplotlib", "Excel (Power Query, Macros)"],
+    skills: ["SQL", "MySQL", "MatLab", "Python", "Pandas", "Matplotlib", "Excel (Power Query, Macros)", "Power BI"],
   },
   {
     category: "CAD & Simulation",
@@ -16,15 +16,15 @@ const skillCategories = [
   },
   {
     category: "Electrical & Electronics",
-    skills: ["Circuit Analysis", "Oscillator", "Digital Multimeter", "Function Generator", "Power Supplies"],
+    skills: ["Circuit Analysis", "Oscillator", "Digital Multimeter", "Function Generator", "Power Supply", "Semiconductor Devices", "Oscilloscope"],
   },
   {
     category: "Chemistry & Materials",
-    skills: ["UV-vis", "Probe Sonicator", "Homogenizer", "Particle Size Analyzer", "Particle Counter", "Rheometer", "FTIR Spectroscopy", "Raman Spectroscopy", "Ellipsometry", "SEM", "X-ray Diffraction", "Impact and Tensile Tester", "Differential Scanning Calorimetry", "Thermal Gravimetric Analysis", "Atomic Force Microscopy"],
+    skills: ["UV-vis", "Probe Sonicator", "Homogenizer", "Particle Size Analyzer", "Particle Counter", "Rheometer", "FTIR Spectroscopy", "Raman Spectroscopy", "Ellipsometry", "SEM", "X-ray Diffraction", "Impact and Tensile Tester", "Differential Scanning Calorimetry", "Thermal Gravimetric Analysis", "Atomic Force Microscopy", "Transmission Electron Microscopy"],
   },
   {
     category: "Soft Skills",
-    skills: ["Problem Solving", "Communication", "Collaboration", "Project Management", "Mutilingual (English, Cantonese, Mandarin)"],
+    skills: ["Problem Solving", "Communication", "Collaboration", "Project Management", "Mutilingual (English, Cantonese, Mandarin)", "Self-learning", "Time Management", "Project Management", "Creativity"],
   },
 ];
 
