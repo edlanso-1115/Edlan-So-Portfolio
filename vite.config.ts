@@ -6,8 +6,8 @@ import { defineConfig } from "vite";
 const plugins = [react(), tailwindcss()];
 
 export default defineConfig({
+  base: '/Edlan-So-Portfolio/',  // 👈 Add this line
   plugins,
-  base: "/Edlan-So-Portfolio-2/", // 👈 CHANGE THIS to match your GitHub repo name
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
