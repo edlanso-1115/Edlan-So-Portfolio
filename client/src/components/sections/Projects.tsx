@@ -10,7 +10,7 @@ const projects = [
     title: "Personal Portfolio Website",
     description: "A responsive portfolio website to showcase projects and skills with a modern design.",
     tags: ["React", "TypeScript", "HTML", "CSS", "JavaScript", "GitHub Pages", "VS Code", "Terminal"],
-    image: "/images/portfolio_homepage.png",
+    image: "/Edlan-So-Portfolio/images/portfolio_homepage.png",
     link: "https://github.com/edlanso-1115/Edlan-So-Portfolio",
   },
   {
@@ -18,7 +18,7 @@ const projects = [
     title: "Python Game Project",
     description: "Modified Tetris game using Pygame with different gamerules, added features and improved graphics.",
     tags: ["Python", "Pygame", "NumPy", "Pandas", "GitHub"],
-    image: "/images/Tetris_Logo.jpg",
+    image: "/Edlan-So-Portfolio/images/Tetris_Logo.jpg",
     link: "https://github.com/edlanso-1115/Tetris-Game-Project",
   },
   {
@@ -26,24 +26,24 @@ const projects = [
     title: "Circuit Design and Analysis",
     description: "Designed and simulated various electronic circuits using industry-standard lab equipment.",
     tags: ["Digital Multimeter", "Power Supply", "Function Generator", "Semiconductor Devices", "Oscilloscope"],
-    image: "/images/Semiconductor.png",
-    link: "/images/Electrical.png",
+    image: "/Edlan-So-Portfolio/images/Semiconductor.png",
+    link: "/Edlan-So-Portfolio/images/Electrical.png",
   },
   {
     id: 4,
     title: "Material Science and Characterization",
     description: "Analyzed and characterized various materials using advanced techniques and instruments.",
     tags: ["Solidworks", "UV Vis", "FTIR", "Raman", "Ellipsometry", "XRD", "SEM", "Impact / Tensile Tester", "DSC", "TGA", "AFM"],
-    image: "/images/QD.png",
-    link: "/images/Materials.png",
+    image: "/Edlan-So-Portfolio/images/QD.png",
+    link: "/Edlan-So-Portfolio/images/Materials.png",
   },
   {
     id: 5,
     title: "Skypark Waterpark - Minecraft Build",
     description: "Built a massive waterpark in Minecraft with various attractions and features since 2016. (My hobby and masterpiece! XD)",
     tags: ["Minecraft", "Creativity", "3D Spatial Design", "Project Management"],
-    image: "/images/Minecraft_icon.PNG",
-    link: "/images/Skypark.png",
+    image: "/Edlan-So-Portfolio/images/Minecraft_icon.PNG",
+    link: "/Edlan-So-Portfolio/images/Skypark.png",
   },
 ];
 
