@@ -6,7 +6,7 @@ import { defineConfig } from "vite";
 const plugins = [react(), tailwindcss()];
 
 export default defineConfig({
-  base: '/Edlan-So-Portfolio/',  // 👈 Add this line
+  base: './',  // 👈 Add this line
   plugins,
   resolve: {
     alias: {
