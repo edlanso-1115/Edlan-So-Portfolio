@@ -27,7 +27,6 @@ jobs:
         with:
           node-version: 20
 
-      # 👇 Go into your client folder (where package.json and src/ live)
       - name: Install dependencies
         run: |
           cd client
@@ -37,14 +36,14 @@ jobs:
         run: |
           cd client
           npm run build
-          # ✅ Create 404.html for React Router fallback
-          cp dist/index.html dist/404.html
+          # ✅ The dist folder is one level up
+          cp ../dist/index.html ../dist/404.html
 
       - name: Upload production files
         uses: actions/upload-pages-artifact@v3
         with:
-          # 👇 Make sure to upload from the correct directory
-          path: client/dist
+          # ✅ Your dist is at the root, not in client
+          path: dist
 
   deploy:
     needs: build
