@@ -37,7 +37,7 @@ const experiences: ExperienceItem[] = [
     ],
     links: [
       { label: "Presenation Slide", href: "https://docs.google.com/presentation/d/1pJKXPQDxpKcRVyE-2a58qPy65BP8XiU-jIH_KcX_Kc0/edit?slide=id.p1#slide=id.p1" },
-      { label: "Images", href: "images/Lab.png" },
+      { label: "Images", href: "/images/Lab.png" },
     ]
   },
   {
