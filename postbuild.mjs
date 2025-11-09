@@ -1,15 +1,10 @@
 import fs from "fs";
+import path from "path";
 
-const source = "./dist/index.html";
-const dest = "./dist/404.html";
+const distDir = path.resolve("dist");
+const source404 = path.resolve("404.html");
+const target404 = path.join(distDir, "404.html");
 
-try {
-  if (fs.existsSync(source)) {
-    fs.copyFileSync(source, dest);
-    console.log("✅ 404.html created successfully!");
-  } else {
-    console.error("❌ index.html not found — did the build fail?");
-  }
-} catch (err) {
-  console.error("⚠️ Error copying 404.html:", err);
-}
+// copy 404.html into dist/
+fs.copyFileSync(source404, target404);
+console.log("✅ 404.html copied to dist/");
