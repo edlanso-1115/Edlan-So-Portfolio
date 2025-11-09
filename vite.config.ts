@@ -1,10 +1,10 @@
-import tailwindcss from "@tailwindcss/vite";
+import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
-import { defineConfig } from "vite";
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  base: "/Edlan-So-Portfolio/", // 👈 this must match your repo name EXACTLY
+  base: "/Edlan-So-Portfolio/", // 👈 important for GitHub Pages
   plugins: [react(), tailwindcss()],
   root: path.resolve(__dirname, "client"),
   build: {
@@ -15,7 +15,6 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "client", "src"),
       "@shared": path.resolve(__dirname, "shared"),
-      "@assets": path.resolve(__dirname, "attached_assets"),
     },
   },
 });

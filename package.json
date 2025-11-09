@@ -6,7 +6,7 @@
   "homepage": "https://edlanso-1115.github.io/Edlan-So-Portfolio",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build",
+    "build": "vite build && node postbuild.mjs",
     "preview": "vite preview --host",
     "check": "tsc --noEmit",
     "format": "prettier --write .",
