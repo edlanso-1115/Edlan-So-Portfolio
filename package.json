@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
-  "homepage": "https://edlanso-1115.github.io/Edlan-So-Portfolio",
+
   "scripts": {
     "dev": "vite --host",
     "build": "vite build && node postbuild.mjs",

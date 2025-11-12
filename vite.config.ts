@@ -4,11 +4,11 @@ import path from "path";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  root: path.resolve(__dirname, "client"), // 👈 index.html is here
-  base: "/Edlan-So-Portfolio/",            // 👈 GitHub Pages repo name
+
   plugins: [react(), tailwindcss()],
+  root: path.resolve(__dirname, "client"),
   build: {
-    outDir: path.resolve(__dirname, "dist"), // 👈 output here
+    outDir: path.resolve(__dirname, "dist"),
     emptyOutDir: true,
   },
   resolve: {
