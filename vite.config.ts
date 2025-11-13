@@ -5,6 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
 
+  base: "/Edlan-So-Portfolio/",
   plugins: [react(), tailwindcss()],
   root: path.resolve(__dirname, "client"),
   build: {
