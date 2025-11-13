@@ -4,8 +4,7 @@ import path from "path";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-
-  base: "/Edlan-So-Portfolio/",
+  base: "/Edlan-So-Portfolio/", // 👈 required for GitHub Pages
   plugins: [react(), tailwindcss()],
   root: path.resolve(__dirname, "client"),
   build: {
