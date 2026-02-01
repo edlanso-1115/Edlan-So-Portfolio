@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Send, Github, Linkedin } from "lucide-react";
 import { toast } from "sonner";
-import ScrollReveal from "@/components/ScrollReveal";
+import { Button } from "../ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
+import ScrollReveal from "../ScrollReveal";
 
 export default function Contact() {
   const [formData, setFormData] = useState({

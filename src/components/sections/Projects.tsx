@@ -1,8 +1,8 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import { useState } from "react";
-import AnimatedCard from "@/components/AnimatedCard";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
+import { Button } from "../ui/button";
+import AnimatedCard from "../AnimatedCard";
 
 const projects = [
   {

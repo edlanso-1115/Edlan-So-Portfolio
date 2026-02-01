@@ -1,5 +1,5 @@
 // ...existing code...
-import ScrollReveal from "@/components/ScrollReveal";
+import ScrollReveal from "../ScrollReveal";
 
 export default function About() {
   return (

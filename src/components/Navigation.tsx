@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Menu, X, Moon, Sun } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { APP_TITLE } from "@/const";
-import { useTheme } from "@/contexts/ThemeContext";
+import { Button } from "./ui/button";
+import { APP_TITLE } from "../const";
+import { useTheme } from "../contexts/ThemeContext";
 
 interface NavigationProps {
   mobileMenuOpen: boolean;

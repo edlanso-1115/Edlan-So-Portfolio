@@ -1,15 +1,15 @@
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
 import { Menu, X, Github, Linkedin, Mail, ExternalLink, ChevronDown } from "lucide-react";
-import { APP_TITLE } from "@/const";
-import Hero from "@/components/sections/Hero";
-import About from "@/components/sections/About";
-import Skills from "@/components/sections/Skills";
-import Projects from "@/components/sections/Projects";
-import Experience from "@/components/sections/Experience";
-import Courses from "@/components/sections/Courses";
-import Contact from "@/components/sections/Contact";
-import Navigation from "@/components/Navigation";
+import { APP_TITLE } from "../const";
+import Hero from "../components/sections/Hero";
+import About from "../components/sections/About";
+import Skills from "../components/sections/Skills";
+import Projects from "../components/sections/Projects";
+import Experience from "../components/sections/Experience";
+import Courses from "../components/sections/Courses";
+import Contact from "../components/sections/Contact";
+import Navigation from "../components/Navigation";
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

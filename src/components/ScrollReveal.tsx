@@ -1,5 +1,5 @@
 import { ReactNode, useRef } from "react";
-import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
 interface ScrollRevealProps {
   children: ReactNode;

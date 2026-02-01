@@ -1,6 +1,6 @@
 import React from "react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import ScrollReveal from "@/components/ScrollReveal";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
+import ScrollReveal from "../ScrollReveal";
 
 type ExperienceItem = {
   id: number;
