@@ -2,6 +2,8 @@ import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
 import ScrollReveal from "../ScrollReveal";
 
+const imageBaseUrl = `${import.meta.env.BASE_URL}images/`;
+
 type ExperienceItem = {
   id: number;
   title: string;
@@ -37,7 +39,7 @@ const experiences: ExperienceItem[] = [
     ],
     links: [
       { label: "Presenation Slide", href: "https://docs.google.com/presentation/d/1pJKXPQDxpKcRVyE-2a58qPy65BP8XiU-jIH_KcX_Kc0/edit?slide=id.p1#slide=id.p1" },
-      { label: "Images", href: "/Edlan-So-Portfolio/images/Lab.png" },
+      { label: "Images", href: `${imageBaseUrl}Lab.png` },
     ]
   },
   {
@@ -152,4 +154,3 @@ export default function Experience() {
     </section>
   );
 }
-
