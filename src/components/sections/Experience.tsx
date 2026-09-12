@@ -16,9 +16,21 @@ type ExperienceItem = {
 const experiences: ExperienceItem[] = [
   {
     id: 1,
+    title: "Project Control Officer",
+    company: "Fairstone Bank",
+    period: "January 2026 - May 2026",
+    description: [
+      "Led remediation of enterprise audit findings, improving PMO governance, controls, and compliance with project management standards while delivering ahead of schedule.",
+      "Updated and streamlined project governance frameworks (Agile/Waterfall), improving intake, prioritization, business cases, and gating documentation to enhance operational transparency and execution efficiency.",
+      "Contributed to AI-driven loan verification workflows on Azure to automate document completeness checks and income calculations across around 180k loan applications.",
+      "Coordinated a multi-billion-dollar Covered Bond program, aligning cross-functional stakeholders and monitoring timelines to ensure timely delivery of key milestones.",
+    ],
+  },
+  {
+    id: 2,
     title: "CPOE Project Assistant",
     company: "Oak Valley Health - Markham Stouffville Hospital",
-    period: "September 2025 - Present",
+    period: "September 2025 - December 2025",
     description: [
       "Support the Meditech CPOE/Web Ambulatory system by assisting staff, documenting issues, troubleshooting, and helping deployment through training, documentation, and system implementation.",
       "Customize and maintained Acorn CPOE website components using HTML, CSS, and JavaScript, ensuring accurate information display and improved usability.",
@@ -26,7 +38,7 @@ const experiences: ExperienceItem[] = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: "Lab Research Assistant - Microplastic Filtration",
     company: "University of Waterloo - Quantum Nano Cenre",
     period: "January 2025 - April 2025",
@@ -43,7 +55,7 @@ const experiences: ExperienceItem[] = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     title: "School Office Assistant",
     company: "Baptist Lui Ming Choi Secondary School",
     period: "June 2024 - August 2024",
@@ -54,7 +66,7 @@ const experiences: ExperienceItem[] = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "Medical Research Assistant",
     company: "University of Waterloo - Remote",
     period: "May 2024 - August 2024",

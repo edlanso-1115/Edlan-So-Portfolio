@@ -8,7 +8,7 @@ const skillCategories = [
   },
   {
     category: "Data Analysis & Visualization",
-    skills: ["SQL", "MySQL", "MatLab", "Python", "Pandas", "Matplotlib", "Excel (Power Query, Macros)", "Power BI"],
+    skills: ["SQL", "MySQL", "MatLab", "Python", "Pandas", "Matplotlib", "Power BI"],
   },
   {
     category: "CAD & Simulation",
@@ -20,11 +20,11 @@ const skillCategories = [
   },
   {
     category: "Chemistry & Materials",
-    skills: ["UV-vis", "Probe Sonicator", "Homogenizer", "Particle Size Analyzer", "Particle Counter", "Rheometer", "FTIR Spectroscopy", "Raman Spectroscopy", "Ellipsometry", "SEM", "X-ray Diffraction", "Impact and Tensile Tester", "Differential Scanning Calorimetry", "Thermal Gravimetric Analysis", "Atomic Force Microscopy", "Transmission Electron Microscopy"],
+    skills: ["Photolithography", "UV-vis", "Probe Sonicator", "Homogenizer", "Particle Size Analyzer", "Particle Counter", "Rheometer", "FTIR Spectroscopy", "Raman Spectroscopy", "Ellipsometry", "SEM", "X-ray Diffraction", "Impact and Tensile Tester", "Differential Scanning Calorimetry", "Thermal Gravimetric Analysis", "Atomic Force Microscopy", "Transmission Electron Microscopy"],
   },
   {
-    category: "Soft Skills",
-    skills: ["Problem Solving", "Communication", "Collaboration", "Project Management", "Mutilingual (English, Cantonese, Mandarin)", "Self-learning", "Time Management", "Project Management", "Creativity"],
+    category: "Project Management & Soft Skills",
+    skills: ["Jira", "Confluence", "Open Text", "MS Office Suite (MS Projects, MS Excel)", "Visio", "Mutilingual (English, Cantonese, Mandarin)", "Self-learning", "Time Management", "Project Management", "Communicaiton"],
   },
 ];
 

@@ -11,13 +11,6 @@ type Course = {
 
 const courses: Course[] = [
   {
-    code: "NE 113",
-    title: "Introduction to Computational Methods",
-    term: "Winter 2024",
-    description: "Numerical methods: Taylor-series summations, roots of equations, roots of polynomials, direct and indirect solution methods for systems of linear, and nonlinear algebraic equations, integration.",
-    tags: ["Matlab", "Python"],
-  },
-  {
     code: "NE 140",
     title: "Linear Circuits",
     term: "Winter 2024",
@@ -50,9 +43,36 @@ const courses: Course[] = [
     title: "Characterization of Nanomaterials",
     term: "Summer 2025",
     description: "Materials structure analysis. Materials composition and chemical bonding analysis. In-situ analysis and monitoring of fabrication process parameters. Materials properties characterization.",
-    tags: ["Spectroscopy", "Materials"],
+    tags: ["Spectroscopy", "Materials Science"],
   },
-  
+  {
+    code: "MSE 261",
+    title: "Engineering Economics",
+    term: "Summer 2026",
+    description: "Engineering economics, cost analysis, and financial decision-making in engineering projects. Topics include time value of money, cost estimation, risk analysis, and project evaluation.",
+    tags: ["Economics", "Finance", "Project Management"],
+  },
+  {
+    code: "NE 333",
+    title: "Macromolecular Science",
+    term: "Summer 2026",
+    description: "Structure, properties, and processing of macromolecules. Topics include polymer synthesis, characterization, and applications in various industries.",
+    tags: ["Polymer", "Materials Science"],
+  },
+  {
+    code: "NE 344",
+    title: "Electronic Circuits",
+    term: "Fall 2026",
+    description: "Analysis and design of electronic circuits, including amplifiers, oscillators, and filters. Topics include transistor and operational amplifier circuits, feedback, and frequency response.",
+    tags: ["Electronics", "Circuits"],
+  },
+  {
+    code: "NE 345",
+    title: "Photonic Materials and Devices",
+    term: "Fall 2026",
+    description: "Study of materials and devices that interact with light, including semiconductors, lasers, and optical fibers. Topics include photonic bandgap materials, nonlinear optics, and optoelectronic devices.",
+    tags: ["Photonic", "Materials Science"],
+  },
 ];
 
 export default function Courses() {

@@ -25,7 +25,7 @@ export default function About() {
                 <div className="rounded-md px-3 py-1 bg-foreground/10 text-foreground text-sm font-semibold">Nanotechnology Engineering • UWaterloo</div>
                 <h3 className="text-2xl font-bold">Edlan So</h3>
                 <p className="text-sm text-muted-foreground">
-                  2B Nanotechnology Engineering student with experience in materials science, electrochemistry, and lab research. Interested in clean energy, advanced materials, and digital healthcare workflows.
+                  3B Nanotechnology Engineering student with experience in materials science, electrochemistry, lab research and project management. Interested in clean energy, advanced materials, and project coordination.
                 </p>
 
                 <div className="mt-3 flex flex-wrap gap-2">
@@ -35,11 +35,13 @@ export default function About() {
                   <span className="text-xs px-2 py-1 bg-background/60 rounded-full border border-border">IT</span>
                   <span className="text-xs px-2 py-1 bg-background/60 rounded-full border border-border">Data Analysis</span>
                   <span className="text-xs px-2 py-1 bg-background/60 rounded-full border border-border">Electrical Engineering</span>
+                  <span className="text-xs px-2 py-1 bg-background/60 rounded-full border border-border">Project Management</span>
+
                 </div>
 
                 <div className="mt-4 w-full">
                   <div className="text-xs text-muted-foreground">Currently</div>
-                  <div className="text-sm font-medium">CPOE Project Assistant — Oak Valley Health</div>
+                  <div className="text-sm font-medium">3B Study Term</div>
                 </div>
 
                 <div className="mt-6 flex gap-3">
@@ -58,25 +60,25 @@ export default function About() {
           <ScrollReveal animation="fade-in-right">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I focus on applying experimental science and data analysis to real-world problems — from optimizing surface treatments and catalyst prep to extracting insights using Python and Excel. I have hands-on lab experience with microplastic filtration, UV-Vis spectroscopy, particle counting, and adsorption isotherm modelling.
+                I focus on applying experimental science and data analysis to problems — from optimizing surface treatments and catalyst prep to extracting insights using Python and Excel. I have hands-on lab experience with microplastic filtration, UV-Vis spectroscopy, particle counting, and adsorption isotherm modelling.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
-                My work in healthcare IT has strengthened my communication and problem-solving skills while working with cross-functional teams to deliver high-impact systems and smooth digital workflows.
+                My works in project management and governance has strengthened my communication and problem-solving skills while working with cross-functional teams to deliver high-impact projects and smooth digital workflows.
               </p>
 
               <div className="grid grid-cols-2 gap-4 pt-4">
                 <div className="p-4 bg-background rounded-lg border border-border">
-                  <div className="text-2xl font-bold text-foreground">3+</div>
+                  <div className="text-2xl font-bold text-foreground">4+</div>
                   <div className="text-sm text-muted-foreground">Work Terms Experience</div>
                 </div>
                 <div className="p-4 bg-background rounded-lg border border-border">
-                  <div className="text-2xl font-bold text-foreground">~10</div>
-                  <div className="text-sm text-muted-foreground">Programming Languages</div>
+                  <div className="text-2xl font-bold text-foreground">3.9/4.0</div>
+                  <div className="text-sm text-muted-foreground">GPA</div>
                 </div>
                 <div className="p-4 bg-background rounded-lg border border-border">
-                  <div className="text-2xl font-bold text-foreground">10+</div>
-                  <div className="text-sm text-muted-foreground">Technologies</div>
+                  <div className="text-2xl font-bold text-foreground">2</div>
+                  <div className="text-sm text-muted-foreground">Term Distinctions</div>
                 </div>
                 <div className="p-4 bg-background rounded-lg border border-border">
                   <div className="text-2xl font-bold text-foreground">15+</div>

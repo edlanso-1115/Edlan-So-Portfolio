@@ -38,7 +38,7 @@ export default function Hero() {
             </span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground/95 max-w-2xl mx-auto leading-relaxed">
-            Student from University of Waterloo | Nanotechnology Engineering | Passionate In New Techs
+            Student from University of Waterloo | Nanotechnology Engineering | Pursuing Nanoelectronics Specialization | Passionate In New Techs
           </p>
         </div>
 
