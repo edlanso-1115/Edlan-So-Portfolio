@@ -73,8 +73,8 @@ export default function About() {
                   <div className="text-sm text-muted-foreground">Work Terms Experience</div>
                 </div>
                 <div className="p-4 bg-background rounded-lg border border-border">
-                  <div className="text-2xl font-bold text-foreground">3.9/4.0</div>
-                  <div className="text-sm text-muted-foreground">GPA</div>
+                  <div className="text-2xl font-bold text-foreground">English, Cantonese, Mandarin</div>
+                  <div className="text-sm text-muted-foreground">Multilingual</div>
                 </div>
                 <div className="p-4 bg-background rounded-lg border border-border">
                   <div className="text-2xl font-bold text-foreground">2</div>
