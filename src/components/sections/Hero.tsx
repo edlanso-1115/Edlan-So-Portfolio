@@ -39,8 +39,9 @@ export default function Hero() {
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground/95 max-w-2xl mx-auto leading-relaxed">
             Student from University of Waterloo | Nanotechnology Engineering | 
+            <br className="hidden sm:inline" />
+            Pursuing Nanoelectronics Specialization | Passionate In New Techs
           </p>
-          <p className="text-lg md:text-xl text-muted-foreground/95 max-w-2xl mx-auto leading-relaxed"> Pursuing Nanoelectronics Specialization | Passionate In New Techs</p>
         </div>
 
         {/* CTA Buttons */}
