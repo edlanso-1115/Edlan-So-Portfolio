@@ -34,8 +34,8 @@ const projects = [
   {
     id: 4,
     title: "Material Science and Characterization",
-    description: "Analyzed and characterized various materials using advanced techniques and instruments.",
-    tags: ["Solidworks", "UV Vis", "FTIR", "Raman", "Ellipsometry", "XRD", "SEM", "Impact / Tensile Tester", "DSC", "TGA", "AFM"],
+    description: "Fabricated, analyzed, and characterized various materials (Silicon Wafers, Metal Films, Polymers) using advanced techniques and instruments.",
+    tags: ["Solidworks", "Photolithography", "UV Vis", "FTIR", "Raman", "Ellipsometry", "XRD", "SEM", "Impact / Tensile Tester", "DSC", "TGA", "AFM"],
     image: `${imageBaseUrl}QD.png`,
     link: `${imageBaseUrl}Materials.png`,
   },
