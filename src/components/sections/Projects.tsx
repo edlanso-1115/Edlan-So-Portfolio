@@ -26,7 +26,7 @@ const projects = [
   {
     id: 3,
     title: "Circuit Design and Analysis",
-    description: "Designed and simulated various electronic circuits using industry-standard lab equipment.",
+    description: "Designed and simulated various electronic circuits (DC, AC, Semiconductors) using industry-standard lab equipment.",
     tags: ["Digital Multimeter", "Power Supply", "Function Generator", "Semiconductor Devices", "Oscilloscope"],
     image: `${imageBaseUrl}Semiconductor.png`,
     link: `${imageBaseUrl}Electrical.png`,
@@ -34,13 +34,21 @@ const projects = [
   {
     id: 4,
     title: "Material Science and Characterization",
-    description: "Fabricated, analyzed, and characterized various materials (Silicon Wafers, Metal Films, Polymers) using advanced techniques and instruments.",
-    tags: ["Solidworks", "Photolithography", "UV Vis", "FTIR", "Raman", "Ellipsometry", "XRD", "SEM", "Impact / Tensile Tester", "DSC", "TGA", "AFM"],
+    description: "Analyzed and characterized diverse materials, including metal compounds and polymers, utilizing advanced analytical techniques to fabricate functional devices such as blue-emitting QLEDs.",
+    tags: ["Solidworks", "UV Vis", "FTIR", "Raman", "Ellipsometry", "XRD", "SEM", "Impact / Tensile Tester", "DSC", "TGA", "AFM"],
     image: `${imageBaseUrl}QD.png`,
     link: `${imageBaseUrl}Materials.png`,
   },
   {
     id: 5,
+    title: "Microplastic Filtration",
+    description: "Modeled and rendered 3D sponge-like porous structures using Blender to visualize filter morphology and support microplastic filtration mechanism analysis.",
+    tags: ["Blender", "3D Modeling", "Visualization", "Creativity"],
+    image: `${imageBaseUrl}sponge.png`,
+    link: `${imageBaseUrl}Edlan So Presentation on MP filtration 2.pdf`,
+  },
+  {
+    id: 6,
     title: "Skypark Waterpark - Minecraft Build",
     description: "Built a massive waterpark in Minecraft with various attractions and features since 2016. (My hobby and masterpiece! XD)",
     tags: ["Minecraft", "Creativity", "3D Spatial Design", "Project Management"],
