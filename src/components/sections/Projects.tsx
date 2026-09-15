@@ -44,8 +44,8 @@ const projects = [
     title: "Microplastic Filtration - 3D Modeling",
     description: "Modeled and rendered 3D sponge-like porous structures using Blender to visualize filter morphology and support microplastic filtration mechanism analysis.",
     tags: ["Blender", "3D Modeling", "Visualization", "Materials Science", "Research"],
-    image: `${imageBaseUrl}Sponge.png`,
-    link: `${imageBaseUrl}mp-filtration-presentation.pdf`,
+    image: `${imageBaseUrl}Blender.png`,
+    link: `${imageBaseUrl}Sponge.png`,
   },
   {
     id: 6,
